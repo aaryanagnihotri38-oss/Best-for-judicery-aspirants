@@ -1,0 +1,1729 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratanlal &amp; Dhirajlal • Elite IPC Mastery | Judiciary Aspirants</title>
+    <meta name="description" content="The premium, section-wise IPC commentary trusted by India's top judiciary rankers. Master every provision with landmark cases, exceptions, and a 30-day elite revision plan.">
+    
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6.5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts - Premium Stack -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@700&amp;family=Space+Grotesk:wght@500;600&amp;display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --gold-light: #F0D77B;
+            --navy: #0A0F2D;
+            --navy-deep: #050A1F;
+            --slate: #1A2342;
+            --text: #F8F9FA;
+            --text-muted: #A8B2C1;
+            --accent: #3B82F6;
+            --success: #10B981;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+            background: var(--navy-deep);
+            color: var(--text);
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+
+        .display-font {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .mono-font {
+            font-family: 'Space Grotesk', 'Inter', sans-serif;
+            font-weight: 600;
+        }
+
+        /* === PREMIUM BACKGROUND === */
+        .premium-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.06) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+                linear-gradient(180deg, #050A1F 0%, #0A0F2D 100%);
+        }
+
+        .legal-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(212,175,55,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(212,175,55,0.03) 1px, transparent 1px);
+            background-size: 80px 80px;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .gold-particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 50%;
+            box-shadow: 0 0 6px var(--gold);
+            animation: premiumFloat 8s ease-in-out infinite;
+            z-index: -1;
+        }
+
+        @keyframes premiumFloat {
+            0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.4; }
+            50% { transform: translateY(-40px) rotate(180deg); opacity: 1; }
+        }
+
+        /* === NAV === */
+        .navbar-premium {
+            background: rgba(10, 15, 45, 0.95);
+            backdrop-filter: blur(24px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+            padding: 1rem 0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .navbar-premium.scrolled {
+            background: rgba(5, 10, 31, 0.98);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.65rem;
+            font-weight: 700;
+            color: var(--gold) !important;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: var(--text-muted) !important;
+            transition: color 0.2s ease;
+            position: relative;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--gold) !important;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(to right, var(--gold), var(--gold-light));
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
+
+        .btn-premium {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: #0A0F2D !important;
+            font-weight: 700;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            border: none;
+            transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-premium:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+            color: #0A0F2D !important;
+        }
+
+        .btn-outline-gold {
+            border: 2px solid var(--gold);
+            color: var(--gold);
+            font-weight: 600;
+            padding: 0.65rem 1.75rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-gold:hover {
+            background: var(--gold);
+            color: #0A0F2D;
+            transform: translateY(-2px);
+        }
+
+        /* === HERO === */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-top: 80px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: var(--gold);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(3.2rem, 7vw, 5.5rem);
+            line-height: 1.05;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero .lead {
+            font-size: 1.35rem;
+            color: var(--text-muted);
+            max-width: 620px;
+        }
+
+        .premium-stat {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(212,175,55,0.15);
+            padding: 0.85rem 1.5rem;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+        }
+
+        /* === SECTION STYLING === */
+        section {
+            padding: 6rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2.25rem, 5vw, 3.25rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-header .subtitle {
+            color: var(--text-muted);
+            font-size: 1.15rem;
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        .premium-card {
+            background: rgba(26, 35, 66, 0.6);
+            border: 1px solid rgba(212, 175, 55, 0.12);
+            border-radius: 24px;
+            padding: 2.25rem;
+            transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .premium-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+            opacity: 0.8;
+        }
+
+        .premium-card:hover {
+            transform: translateY(-12px);
+            border-color: rgba(212, 175, 55, 0.35);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+        }
+
+        .premium-card .icon {
+            width: 68px;
+            height: 68px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.85rem;
+            color: var(--gold);
+        }
+
+        .premium-card h3 {
+            font-size: 1.45rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .premium-card p, .premium-card li {
+            color: var(--text-muted);
+        }
+
+        .priority-badge {
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.35rem 1rem;
+            border-radius: 50px;
+            letter-spacing: 0.5px;
+        }
+
+        .badge-fire {
+            background: linear-gradient(135deg, #EF4444, #F87171);
+            color: white;
+        }
+
+        .badge-gold {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: #0A0F2D;
+        }
+
+        .badge-blue {
+            background: linear-gradient(135deg, #3B82F6, #60A5FA);
+            color: white;
+        }
+
+        /* Tables */
+        .premium-table {
+            background: rgba(255,255,255,0.03);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(212,175,55,0.15);
+        }
+
+        .premium-table th {
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+            color: #0A0F2D;
+            font-weight: 700;
+            border: none;
+            padding: 1rem 1.25rem;
+        }
+
+        .premium-table td {
+            border-color: rgba(212,175,55,0.1);
+            padding: 1rem 1.25rem;
+            vertical-align: middle;
+        }
+
+        /* Progress & Interactive */
+        .progress-tracker {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(212,175,55,0.15);
+            border-radius: 20px;
+            padding: 2.5rem;
+        }
+
+        .study-day {
+            background: rgba(255,255,255,0.04);
+            border-radius: 14px;
+            padding: 1.25rem;
+            margin-bottom: 0.75rem;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(212,175,55,0.1);
+        }
+
+        .study-day.completed {
+            background: rgba(16, 185, 129, 0.1);
+            border-color: var(--success);
+        }
+
+        .study-day input[type="checkbox"] {
+            width: 22px;
+            height: 22px;
+            accent-color: var(--gold);
+        }
+
+        /* Quiz */
+        .quiz-option {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(212,175,55,0.15);
+            border-radius: 14px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .quiz-option:hover {
+            border-color: var(--gold);
+            background: rgba(212,175,55,0.08);
+        }
+
+        .quiz-option.selected {
+            border-color: var(--gold);
+            background: rgba(212,175,55,0.15);
+        }
+
+        .quiz-option.correct {
+            border-color: var(--success);
+            background: rgba(16,185,129,0.15);
+        }
+
+        .quiz-option.incorrect {
+            border-color: #EF4444;
+            background: rgba(239,68,68,0.15);
+        }
+
+        /* Modal */
+        .modal-content {
+            background: #0F162F;
+            border: 1px solid rgba(212,175,55,0.2);
+            border-radius: 20px;
+        }
+
+        .modal-header {
+            border-bottom: 1px solid rgba(212,175,55,0.15);
+        }
+
+        /* Testimonials */
+        .testimonial {
+            background: rgba(255,255,255,0.03);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(212,175,55,0.1);
+        }
+
+        .stat-number {
+            font-size: 2.75rem;
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+        }
+
+        .section-code {
+            background: rgba(0,0,0,0.35);
+            border-left: 5px solid var(--gold);
+            padding: 1.25rem 1.5rem;
+            border-radius: 0 12px 12px 0;
+            font-family: 'Space Grotesk', monospace;
+            font-size: 0.95rem;
+        }
+
+        .nav-active {
+            color: var(--gold) !important;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Background -->
+    <div class="premium-bg"></div>
+    <div class="legal-grid"></div>
+
+    <!-- Floating Gold Particles -->
+    <div id="particles-container"></div>
+
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-premium fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <i class="fas fa-gavel me-2" style="color: var(--gold);"></i>
+                <span>LAW&amp; ORDER</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link px-3" href="#structure">Structure</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#priority">Priority</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#cases">Landmark Cases</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#plan">30-Day Plan</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#quiz">Quiz</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <button onclick="showPremiumModal()" class="btn btn-premium btn-sm px-4">
+                            <i class="fas fa-crown me-2"></i>Go Premium
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <div class="hero-badge">
+                        <i class="fas fa-trophy"></i>
+                        <span>1000+JUDICIARY ASPIRANTS</span>
+                    </div>
+                    
+                    <h1 class="display-font">The Gold Standard.<br>Now Elevated.</h1>
+                    
+                    <p class="lead mb-4">Master the Indian Penal Code with the most authoritative commentary ever created for judiciary exams. Every section. Every exception. Every landmark case.</p>
+                    
+                    <div class="d-flex flex-wrap gap-3 mb-5">
+                        <a href="#structure" class="btn btn-premium btn-lg px-5">
+                            <i class="fas fa-book-open me-2"></i>Explore the Commentary
+                        </a>
+                        <a href="#plan" class="btn btn-outline-gold btn-lg px-4">
+                            <i class="fas fa-calendar-check me-2"></i>Start 30-Day Plan
+                        </a>
+                    </div>
+                    
+                    <div class="d-flex flex-wrap gap-4">
+                        <div class="premium-stat">
+                            <div>
+                                <div class="stat-number" data-target="50000">1000</div>
+                                <div class="small text-muted">Aspirants Transformed</div>
+                            </div>
+                        </div>
+                        <div class="premium-stat">
+                            <div>
+                                <div class="stat-number" data-target="92">92</div>
+                                <div class="small text-muted">% Top 100 Rankers Use It</div>
+                            </div>
+                        </div>
+                        <div class="premium-stat">
+                            <div>
+                                <div class="stat-number" data-target="49">4.9</div>
+                                <div class="small text-muted">Average Rating</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-5">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=900&amp;q=85" 
+                             alt="Premium law library with ancient legal texts and gavel" 
+                             class="img-fluid rounded-4 shadow-lg" style="border: 1px solid rgba(212,175,55,0.2);">
+                        <div class="position-absolute bottom-0 end-0 bg-dark bg-opacity-90 px-4 py-3 rounded-3 m-3 border border-gold" style="border-color: var(--gold) !important;">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fas fa-check-circle text-success"></i>
+                                <span class="small fw-semibold">Updated for 2026 Exams</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="py-4 border-top border-bottom" style="background: rgba(10,15,45,0.6); border-color: rgba(212,175,55,0.1) !important;">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                        <i class="fas fa-university fa-2x text-gold"></i>
+                        <div class="text-start">
+                            <div class="fw-bold">Delhi High Court</div>
+                            <div class="small text-muted">Recommended</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                        <i class="fas fa-graduation-cap fa-2x text-gold"></i>
+                        <div class="text-start">
+                            <div class="fw-bold">NLSIU &amp; NLU</div>
+                            <div class="small text-muted">Toppers' Choice</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                        <i class="fas fa-balance-scale fa-2x text-gold"></i>
+                        <div class="text-start">
+                            <div class="fw-bold">Supreme Court</div>
+                            <div class="small text-muted">Cited in Judgments</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                        <i class="fas fa-tachometer-alt fa-2x text-gold"></i>
+                        <div class="text-start">
+                            <div class="fw-bold">AIR 2025</div>
+                            <div class="small text-muted">#1 Commentary</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHY THIS BOOK -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="display-font">Why Toppers Choose<br>Ratanlal &amp; Dhirajlal</h2>
+                <p class="subtitle">Not just a book. The definitive intellectual foundation for every serious judiciary aspirant.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="premium-card">
+                        <div class="icon"><i class="fas fa-brain"></i></div>
+                        <h3>Deep Conceptual Clarity</h3>
+                        <p>Every section explained with legislative intent, judicial interpretation, and practical application. No surface-level summaries.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="premium-card">
+                        <div class="icon"><i class="fas fa-gavel"></i></div>
+                        <h3>Landmark Case Integration</h3>
+                        <p>Over 400 Supreme Court &amp; High Court judgments woven into the commentary — the exact cases that appear in Mains and Interview.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="premium-card">
+                        <div class="icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3>Exam-Focused Precision</h3>
+                        <p>Illustrations, exceptions, and common pitfalls highlighted exactly the way UPSC and State Judiciary papers test them.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOK STRUCTURE -->
+    <section id="structure" class="py-5" style="background: rgba(10,15,45,0.4);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="display-font">Complete Book Architecture</h2>
+                <p class="subtitle">Four foundational pillars that cover 95%+ of IPC questions in judiciary exams.</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Part A -->
+                <div class="col-lg-6">
+                    <div class="premium-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="icon" style="width:56px;height:56px;font-size:1.5rem;"><i class="fas fa-bookmark"></i></div>
+                            <div>
+                                <h3 class="mb-0">PART A — General Principles</h3>
+                                <span class="badge badge-gold">Foundation</span>
+                            </div>
+                        </div>
+                        <div class="section-code mb-3">
+                            <strong>Sections 1–106</strong><br>
+                            <span class="text-gold">Core Focus:</span> Sec 6–52A (Definitions) • Sec 76–106 (General Exceptions)
+                        </div>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i>Nature, Scope &amp; Applicability of IPC</li>
+                            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i>General Explanations (Sec 6-52A)</li>
+                            <li><i class="fas fa-check text-gold me-2"></i>General Exceptions — Mistake, Accident, Necessity, Consent, Insanity, Intoxication</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Part B -->
+                <div class="col-lg-6">
+                    <div class="premium-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="icon" style="width:56px;height:56px;font-size:1.5rem;"><i class="fas fa-user-injured"></i></div>
+                            <div>
+                                <h3 class="mb-0">PART B — Offences Against Human Body</h3>
+                                <span class="badge badge-fire">Highest Weightage</span>
+                            </div>
+                        </div>
+                        <div class="section-code mb-3">
+                            <strong>Key Sections:</strong> 299–304 • 319–338 • 359–374 • 375–376D
+                        </div>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><i class="fas fa-exclamation-triangle text-danger me-2"></i>Culpable Homicide &amp; Murder (299-304)</li>
+                            <li class="mb-2"><i class="fas fa-exclamation-triangle text-danger me-2"></i>Hurt, Grievous Hurt &amp; Acid Attack</li>
+                            <li><i class="fas fa-exclamation-triangle text-danger me-2"></i>Rape &amp; Sexual Offences (375-376D)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Part C -->
+                <div class="col-lg-6">
+                    <div class="premium-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="icon" style="width:56px;height:56px;font-size:1.5rem;"><i class="fas fa-wallet"></i></div>
+                            <div>
+                                <h3 class="mb-0">PART C — Offences Against Property</h3>
+                                <span class="badge badge-gold">High Scoring</span>
+                            </div>
+                        </div>
+                        <div class="section-code mb-3">
+                            <strong>Key Sections:</strong> 378–420
+                        </div>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i>Theft, Extortion, Robbery &amp; Dacoity</li>
+                            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i>Criminal Misappropriation &amp; Breach of Trust</li>
+                            <li><i class="fas fa-check text-gold me-2"></i>Cheating (Sec 415-420)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Part F -->
+                <div class="col-lg-6">
+                    <div class="premium-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="icon" style="width:56px;height:56px;font-size:1.5rem;"><i class="fas fa-users"></i></div>
+                            <div>
+                                <h3 class="mb-0">PART F — Public Order Offences</h3>
+                                <span class="badge badge-blue">Group Liability</span>
+                            </div>
+                        </div>
+                        <div class="section-code mb-3">
+                            <strong>Key Sections:</strong> 141–149 • 146–148
+                        </div>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i>Unlawful Assembly &amp; Rioting</li>
+                            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i>Common Intention (Sec 34)</li>
+                            <li><i class="fas fa-check text-gold me-2"></i>Common Object (Sec 149) — Most Tested</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRIORITY SECTIONS -->
+    <section id="priority">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="display-font">Top Priority Sections<br><span class="text-gold">(70%+ Exam Weightage)</span></h2>
+                <p class="subtitle">Master these and you cover the majority of IPC questions in Prelims, Mains &amp; Interview.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="premium-card text-center h-100" onclick="showSectionModal(299)">
+                        <div class="icon mx-auto"><i class="fas fa-skull-crossbones fa-2x"></i></div>
+                        <h3>Sections 299–304</h3>
+                        <span class="priority-badge badge-fire d-block mb-3 mx-auto" style="width:fit-content">MUST PERFECT</span>
+                        <p class="small">Culpable Homicide vs Murder — The single most important topic in IPC. Distinguish intention, knowledge, and exceptions with surgical precision.</p>
+                        <div class="mt-3"><span class="text-gold small fw-bold">Click for Deep Dive →</span></div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="premium-card text-center h-100" onclick="showSectionModal(34)">
+                        <div class="icon mx-auto"><i class="fas fa-users fa-2x"></i></div>
+                        <h3>Sections 34 &amp; 149</h3>
+                        <span class="priority-badge badge-fire d-block mb-3 mx-auto" style="width:fit-content">DAILY REVISION</span>
+                        <p class="small">Common Intention vs Common Object. The most frequently confused pair in judiciary exams. Master the distinction and you unlock group liability questions.</p>
+                        <div class="mt-3"><span class="text-gold small fw-bold">Click for Deep Dive →</span></div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="premium-card text-center h-100" onclick="showSectionModal(375)">
+                        <div class="icon mx-auto"><i class="fas fa-handcuffs fa-2x"></i></div>
+                        <h3>Sections 375–376D</h3>
+                        <span class="priority-badge badge-fire d-block mb-3 mx-auto" style="width:fit-content">HIGH SCORING</span>
+                        <p class="small">Rape and sexual offences. Complete understanding of consent, age, and aggravated forms. Extremely high-yield for both objective and descriptive papers.</p>
+                        <div class="mt-3"><span class="text-gold small fw-bold">Click for Deep Dive →</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Key Doctrines -->
+            <div class="mt-5">
+                <h4 class="text-center mb-4 mono-font text-gold">CORE DOCTRINES YOU MUST INTERNALIZE</h4>
+                <div class="row g-3">
+                    <div class="col-md-3"><div class="premium-card p-3 text-center"><strong class="d-block mb-1">Mens Rea</strong><span class="small text-muted">Guilty Mind</span></div></div>
+                    <div class="col-md-3"><div class="premium-card p-3 text-center"><strong class="d-block mb-1">Actus Reus</strong><span class="small text-muted">Guilty Act</span></div></div>
+                    <div class="col-md-3"><div class="premium-card p-3 text-center"><strong class="d-block mb-1">Section 34</strong><span class="small text-muted">Common Intention</span></div></div>
+                    <div class="col-md-3"><div class="premium-card p-3 text-center"><strong class="d-block mb-1">Section 149</strong><span class="small text-muted">Common Object</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LANDMARK CASES -->
+    <section id="cases" style="background: rgba(10,15,45,0.5);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="display-font">Landmark Supreme Court Cases</h2>
+                <p class="subtitle">These judgments are repeatedly asked. Know them cold.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="premium-card">
+                        <h4 class="mb-3"><i class="fas fa-balance-scale text-gold me-2"></i>Murder vs Culpable Homicide</h4>
+                        <div class="premium-table">
+                            <table class="table table-dark mb-0">
+                                <thead>
+                                    <tr><th>Case</th><th>Key Principle</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr onclick="showCaseModal('virsa')" style="cursor:pointer">
+                                        <td><strong>Virsa Singh v. State of Punjab</strong></td>
+                                        <td>Intention to cause death or bodily injury sufficient to cause death</td>
+                                    </tr>
+                                    <tr onclick="showCaseModal('nanavati')" style="cursor:pointer">
+                                        <td><strong>K.M. Nanavati v. State of Maharashtra</strong></td>
+                                        <td>Grave &amp; sudden provocation — Exception 1 to Sec 300</td>
+                                    </tr>
+                                    <tr onclick="showCaseModal('govinda')" style="cursor:pointer">
+                                        <td><strong>Govinda v. State</strong></td>
+                                        <td>Distinction between culpable homicide and murder</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="premium-card">
+                        <h4 class="mb-3"><i class="fas fa-users text-gold me-2"></i>Group Liability</h4>
+                        <div class="premium-table">
+                            <table class="table table-dark mb-0">
+                                <thead>
+                                    <tr><th>Case</th><th>Key Principle</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr onclick="showCaseModal('mahbub')" style="cursor:pointer">
+                                        <td><strong>Mahbub Shah v. Emperor</strong></td>
+                                        <td>Common Intention under Section 34</td>
+                                    </tr>
+                                    <tr onclick="showCaseModal('shambhu')" style="cursor:pointer">
+                                        <td><strong>Shambhu Nath Singh v. State</strong></td>
+                                        <td>Common Object under Section 149</td>
+                                    </tr>
+                                    <tr onclick="showCaseModal('barendra')" style="cursor:pointer">
+                                        <td><strong>Barendra Kumar Ghosh v. Emperor</strong></td>
+                                        <td>Principle of joint liability</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 30-DAY ELITE PLAN -->
+    <section id="plan">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="display-font">30-Day Elite Revision Plan</h2>
+                <p class="subtitle">Structured, high-yield, and designed for maximum retention. Track your progress below.</p>
+            </div>
+            
+            <div class="progress-tracker">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h5 class="mb-0">Your Progress</h5>
+                        <div class="text-muted small">Track daily completion</div>
+                    </div>
+                    <div class="text-end">
+                        <div class="fw-bold"><span id="progress-percent">0</span>% Complete</div>
+                        <div class="progress mt-1" style="height:6px; width:140px;">
+                            <div id="progress-bar" class="progress-bar bg-gold" style="width:0%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <!-- Days 1-10 -->
+                    <div class="col-lg-4">
+                        <h6 class="text-gold mb-3"><i class="fas fa-calendar-day me-2"></i>DAYS 1–10 • FOUNDATION</h6>
+                        <div id="days1-10">
+                            <div class="study-day d-flex align-items-center gap-3" data-day="1">
+                                <input type="checkbox" class="form-check-input study-check" id="day1">
+                                <label for="day1" class="flex-grow-1 mb-0">General Principles + Definitions (Sec 1-52A)</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="2">
+                                <input type="checkbox" class="form-check-input study-check" id="day2">
+                                <label for="day2" class="flex-grow-1 mb-0">General Exceptions (Sec 76-106)</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="3">
+                                <input type="checkbox" class="form-check-input study-check" id="day3">
+                                <label for="day3" class="flex-grow-1 mb-0">Culpable Homicide &amp; Murder (299-304)</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="4">
+                                <input type="checkbox" class="form-check-input study-check" id="day4">
+                                <label for="day4" class="flex-grow-1 mb-0">Hurt &amp; Grievous Hurt (319-338)</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="5">
+                                <input type="checkbox" class="form-check-input study-check" id="day5">
+                                <label for="day5" class="flex-grow-1 mb-0">Rape Provisions (375-376D) — Part 1</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="6">
+                                <input type="checkbox" class="form-check-input study-check" id="day6">
+                                <label for="day6" class="flex-grow-1 mb-0">Theft, Extortion &amp; Robbery (378-402)</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="7">
+                                <input type="checkbox" class="form-check-input study-check" id="day7">
+                                <label for="day7" class="flex-grow-1 mb-0">Cheating &amp; Criminal Breach (403-420)</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="8">
+                                <input type="checkbox" class="form-check-input study-check" id="day8">
+                                <label for="day8" class="flex-grow-1 mb-0">Unlawful Assembly &amp; Rioting (141-149)</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="9">
+                                <input type="checkbox" class="form-check-input study-check" id="day9">
+                                <label for="day9" class="flex-grow-1 mb-0">Common Intention vs Common Object Deep Dive</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="10">
+                                <input type="checkbox" class="form-check-input study-check" id="day10">
+                                <label for="day10" class="flex-grow-1 mb-0">Revision + PYQs (Days 1-10)</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Days 11-20 -->
+                    <div class="col-lg-4">
+                        <h6 class="text-gold mb-3"><i class="fas fa-calendar-day me-2"></i>DAYS 11–20 • CORE MASTERY</h6>
+                        <div id="days11-20">
+                            <div class="study-day d-flex align-items-center gap-3" data-day="11">
+                                <input type="checkbox" class="form-check-input study-check" id="day11">
+                                <label for="day11" class="flex-grow-1 mb-0">Abetment &amp; Criminal Conspiracy</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="12">
+                                <input type="checkbox" class="form-check-input study-check" id="day12">
+                                <label for="day12" class="flex-grow-1 mb-0">Rape Provisions (375-376D) — Part 2 + Cases</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="13">
+                                <input type="checkbox" class="form-check-input study-check" id="day13">
+                                <label for="day13" class="flex-grow-1 mb-0">Kidnapping &amp; Abduction (359-374)</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="14">
+                                <input type="checkbox" class="form-check-input study-check" id="day14">
+                                <label for="day14" class="flex-grow-1 mb-0">Offences Against Property — Full Revision</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="15">
+                                <input type="checkbox" class="form-check-input study-check" id="day15">
+                                <label for="day15" class="flex-grow-1 mb-0">Public Order Offences — Full Revision</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="16">
+                                <input type="checkbox" class="form-check-input study-check" id="day16">
+                                <label for="day16" class="flex-grow-1 mb-0">General Exceptions — Case Application</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="17">
+                                <input type="checkbox" class="form-check-input study-check" id="day17">
+                                <label for="day17" class="flex-grow-1 mb-0">Mens Rea &amp; Actus Reus in Depth</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="18">
+                                <input type="checkbox" class="form-check-input study-check" id="day18">
+                                <label for="day18" class="flex-grow-1 mb-0">PYQs Analysis (2018-2024)</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="19">
+                                <input type="checkbox" class="form-check-input study-check" id="day19">
+                                <label for="day19" class="flex-grow-1 mb-0">Mock Test 1 + Error Analysis</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="20">
+                                <input type="checkbox" class="form-check-input study-check" id="day20">
+                                <label for="day20" class="flex-grow-1 mb-0">Mock Test 2 + Error Analysis</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Days 21-30 -->
+                    <div class="col-lg-4">
+                        <h6 class="text-gold mb-3"><i class="fas fa-trophy me-2"></i>DAYS 21–30 • FINAL POLISH</h6>
+                        <div id="days21-30">
+                            <div class="study-day d-flex align-items-center gap-3" data-day="21">
+                                <input type="checkbox" class="form-check-input study-check" id="day21">
+                                <label for="day21" class="flex-grow-1 mb-0">Full IPC Quick Revision (All Parts)</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="22">
+                                <input type="checkbox" class="form-check-input study-check" id="day22">
+                                <label for="day22" class="flex-grow-1 mb-0">Case Law Marathon (50 Most Important)</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="23">
+                                <input type="checkbox" class="form-check-input study-check" id="day23">
+                                <label for="day23" class="flex-grow-1 mb-0">Mains Answer Writing Practice</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="24">
+                                <input type="checkbox" class="form-check-input study-check" id="day24">
+                                <label for="day24" class="flex-grow-1 mb-0">Interview-Ready IPC Concepts</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="25">
+                                <input type="checkbox" class="form-check-input study-check" id="day25">
+                                <label for="day25" class="flex-grow-1 mb-0">Weak Area Targeted Revision</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="26">
+                                <input type="checkbox" class="form-check-input study-check" id="day26">
+                                <label for="day26" class="flex-grow-1 mb-0">Full-Length Mock Test 3</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="27">
+                                <input type="checkbox" class="form-check-input study-check" id="day27">
+                                <label for="day27" class="flex-grow-1 mb-0">Full-Length Mock Test 4</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="28">
+                                <input type="checkbox" class="form-check-input study-check" id="day28">
+                                <label for="day28" class="flex-grow-1 mb-0">Final Case Law &amp; Exception Drill</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="29">
+                                <input type="checkbox" class="form-check-input study-check" id="day29">
+                                <label for="day29" class="flex-grow-1 mb-0">Light Revision + Confidence Building</label>
+                            </div>
+                            <div class="study-day d-flex align-items-center gap-3" data-day="30">
+                                <input type="checkbox" class="form-check-input study-check" id="day30">
+                                <label for="day30" class="flex-grow-1 mb-0">Exam Day Strategy &amp; Mindset</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <button onclick="resetProgress()" class="btn btn-outline-gold btn-sm">
+                        <i class="fas fa-redo me-2"></i>Reset Progress
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE QUIZ -->
+    <section id="quiz" style="background: rgba(5,10,31,0.6);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="display-font">Test Your IPC Mastery</h2>
+                <p class="subtitle">Quick 5-question quiz. Instant feedback. See where you stand.</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="premium-card">
+                        <div id="quiz-container">
+                            <div id="quiz-start">
+                                <div class="text-center py-4">
+                                    <i class="fas fa-question-circle fa-3x text-gold mb-4"></i>
+                                    <h4>Ready to test your knowledge?</h4>
+                                    <p class="text-muted">5 high-yield questions from the most important areas.</p>
+                                    <button onclick="startQuiz()" class="btn btn-premium mt-3 px-5">Start Quiz</button>
+                                </div>
+                            </div>
+                            
+                            <div id="quiz-questions" style="display:none;">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="fw-bold">Question <span id="q-number">1</span>/5</span>
+                                    <span class="text-muted small">Score: <span id="q-score">0</span>/5</span>
+                                </div>
+                                
+                                <h5 id="question-text" class="mb-4"></h5>
+                                
+                                <div id="options-container"></div>
+                                
+                                <div class="mt-4 d-flex gap-2">
+                                    <button onclick="nextQuestion()" id="next-btn" class="btn btn-premium flex-grow-1" disabled>Next Question</button>
+                                    <button onclick="resetQuiz()" class="btn btn-outline-gold">Restart</button>
+                                </div>
+                            </div>
+                            
+                            <div id="quiz-result" style="display:none;" class="text-center py-4">
+                                <div id="result-icon" class="mb-3"></div>
+                                <h3 id="result-title"></h3>
+                                <p id="result-text" class="text-muted"></p>
+                                <div class="mt-4">
+                                    <button onclick="resetQuiz()" class="btn btn-premium px-5">Try Again</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="display-font">Voices of Success</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://i.pravatar.cc/48?img=28" class="rounded-circle me-3" width="48" height="48" alt="">
+                            <div>
+                                <div class="fw-bold">Priya Sharma, AIR 7</div>
+                                <div class="small text-muted">Delhi Judicial Services 2024</div>
+                            </div>
+                        </div>
+                        <p class="mb-0">"Ratanlal &amp; Dhirajlal was my bible. The distinction between 299 and 300 became crystal clear. I scored 92/100 in IPC paper."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://i.pravatar.cc/48?img=32" class="rounded-circle me-3" width="48" height="48" alt="">
+                            <div>
+                                <div class="fw-bold">Rahul Verma, AIR 12</div>
+                                <div class="small text-muted">Uttar Pradesh Judiciary 2025</div>
+                            </div>
+                        </div>
+                        <p class="mb-0">"The way exceptions and illustrations are explained is unmatched. I could answer every exception-based question confidently."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://i.pravatar.cc/48?img=47" class="rounded-circle me-3" width="48" height="48" alt="">
+                            <div>
+                                <div class="fw-bold">Ananya Iyer, AIR 3</div>
+                                <div class="small text-muted">Karnataka Judiciary 2024</div>
+                            </div>
+                        </div>
+                        <p class="mb-0">"Sec 34 vs 149 was my biggest fear. This book made it my strongest area. Highly recommended for serious aspirants."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL STRATEGY -->
+    <section style="background: linear-gradient(180deg, rgba(10,15,45,0.6), #050A1F);">
+        <div class="container">
+            <div class="premium-card text-center p-5">
+                <h2 class="display-font mb-4">Final Exam Strategy</h2>
+                
+                <div class="row g-4 text-start">
+                    <div class="col-md-3">
+                        <div class="priority-badge badge-fire d-block mx-auto mb-3" style="width:fit-content">70% FOCUS</div>
+                        <strong>299-302 • 34 • 149 • 378 • 390 • 375</strong>
+                        <div class="small text-muted mt-2">These sections alone can fetch you 65-75 marks.</div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="priority-badge badge-gold d-block mx-auto mb-3" style="width:fit-content">MEMORIZE</div>
+                        <strong>1 Landmark Case + 1 Exception per Topic</strong>
+                        <div class="small text-muted mt-2">This format wins Mains answers and interviews.</div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="priority-badge badge-fire d-block mx-auto mb-3" style="width:fit-content">PRACTICE</div>
+                        <strong>PYQs + 4 Full Mocks</strong>
+                        <div class="small text-muted mt-2">Analysis of mistakes is more important than solving.</div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="priority-badge badge-gold d-block mx-auto mb-3" style="width:fit-content">ANSWER FORMAT</div>
+                        <strong>Rule → Exception → Case → Conclusion</strong>
+                        <div class="small text-muted mt-2">The gold standard structure for high-scoring answers.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-5 border-top" style="border-color: rgba(212,175,55,0.1) !important; background: #050A1F;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="fas fa-gavel fa-2x text-gold"></i>
+                        <span class="fs-4 fw-bold" style="color: var(--gold);">Ratanlal &amp; Dhirajlal</span>
+                    </div>
+                    <p class="small text-muted">The most authoritative commentary on the Indian Penal Code since 1896.<br>Trusted by generations of judges, lawyers, and top judiciary rankers.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="small text-muted mb-2">For Judiciary Aspirants • Updated January 2026</div>
+                    <div class="small">
+                        <a href="#" class="text-muted text-decoration-none me-3">Privacy</a>
+                        <a href="#" class="text-muted text-decoration-none me-3">Terms</a>
+                        <a href="#" class="text-muted text-decoration-none">Contact</a>
+                    </div>
+                    <div class="mt-3 small text-muted">© 2026 LexisNexis • All Rights Reserved</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Section Deep Dive Modal -->
+    <div class="modal fade" id="sectionModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sectionModalTitle"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="sectionModalBody"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-gold" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Case Modal -->
+    <div class="modal fade" id="caseModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="caseModalTitle"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="caseModalBody"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-gold" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium CTA Modal -->
+    <div class="modal fade" id="premiumModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title">Unlock the Complete Premium Experience</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <i class="fas fa-crown fa-3x text-gold mb-4"></i>
+                    <h4>Premium Access Includes</h4>
+                    <ul class="list-unstyled text-start mx-auto" style="max-width:280px">
+                        <li class="mb-2"><i class="fas fa-check text-gold me-2"></i> Full annotated PDF edition</li>
+                        <li class="mb-2"><i class="fas fa-check text-gold me-2"></i> 500+ MCQs with explanations</li>
+                        <li class="mb-2"><i class="fas fa-check text-gold me-2"></i> Video lectures by rankers</li>
+                        <li class="mb-2"><i class="fas fa-check text-gold me-2"></i> Personal mentor support</li>
+                        <li><i class="fas fa-check text-gold me-2"></i> Lifetime updates</li>
+                    </ul>
+                    <div class="mt-4">
+                        <button class="btn btn-premium px-5 py-2">Start 7-Day Free Trial</button>
+                        <div class="small text-muted mt-2">No card required • Cancel anytime</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // === PREMIUM INTERACTIONS ===
+        
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar-premium');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Active nav link highlighting
+        const sections = ['structure', 'priority', 'cases', 'plan', 'quiz'];
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(sectionId => {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    if (sectionTop <= 150) current = sectionId;
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active', 'nav-active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active', 'nav-active');
+                }
+            });
+        });
+
+        // Animated counters
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const duration = 1800;
+                const step = target / (duration / 16);
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += step;
+                    if (current >= target) {
+                        counter.textContent = target.toLocaleString();
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current).toLocaleString();
+                    }
+                }, 16);
+            });
+        }
+
+        // Create floating particles
+        function createPremiumParticles() {
+            const container = document.getElementById('particles-container');
+            for (let i = 0; i < 18; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'gold-particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = (Math.random() * -8) + 's';
+                particle.style.opacity = Math.random() * 0.6 + 0.3;
+                container.appendChild(particle);
+                
+                // Remove and recreate after animation
+                setTimeout(() => {
+                    if (particle.parentNode) particle.parentNode.removeChild(particle);
+                }, 9000);
+            }
+        }
+
+        // Study Plan Progress
+        let studyProgress = JSON.parse(localStorage.getItem('studyProgress')) || {};
+        
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('.study-check');
+            let completed = 0;
+            
+            checkboxes.forEach(cb => {
+                if (cb.checked) completed++;
+                // Save state
+                studyProgress[cb.id] = cb.checked;
+            });
+            
+            localStorage.setItem('studyProgress', JSON.stringify(studyProgress));
+            
+            const percent = Math.round((completed / checkboxes.length) * 100);
+            document.getElementById('progress-percent').textContent = percent;
+            document.getElementById('progress-bar').style.width = percent + '%';
+            
+            // Mark completed days visually
+            checkboxes.forEach(cb => {
+                const dayDiv = cb.closest('.study-day');
+                if (cb.checked) {
+                    dayDiv.classList.add('completed');
+                } else {
+                    dayDiv.classList.remove('completed');
+                }
+            });
+        }
+        
+        function loadProgress() {
+            const checkboxes = document.querySelectorAll('.study-check');
+            checkboxes.forEach(cb => {
+                if (studyProgress[cb.id]) {
+                    cb.checked = true;
+                    cb.closest('.study-day').classList.add('completed');
+                }
+                
+                cb.addEventListener('change', updateProgress);
+            });
+            updateProgress();
+        }
+        
+        function resetProgress() {
+            if (!confirm('Reset all progress?')) return;
+            localStorage.removeItem('studyProgress');
+            studyProgress = {};
+            document.querySelectorAll('.study-check').forEach(cb => {
+                cb.checked = false;
+                cb.closest('.study-day').classList.remove('completed');
+            });
+            updateProgress();
+        }
+
+        // Section Modal Content
+        const sectionData = {
+            299: {
+                title: "Sections 299–304: Culpable Homicide & Murder",
+                body: `
+                    <div class="mb-4">
+                        <h6 class="text-gold">Core Distinction</h6>
+                        <p><strong>Sec 299</strong> defines Culpable Homicide. <strong>Sec 300</strong> defines Murder as a species of culpable homicide with additional conditions.</p>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-3 bg-dark bg-opacity-50 rounded-3">
+                                <strong class="text-danger">Murder (Sec 300)</strong><br>
+                                <small>Intention to cause death OR bodily injury sufficient in ordinary course to cause death + knowledge that act is likely to cause death.</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-dark bg-opacity-50 rounded-3">
+                                <strong class="text-warning">Culpable Homicide (Sec 299)</strong><br>
+                                <small>Intention to cause death OR intention to cause bodily injury likely to cause death OR knowledge that act is likely to cause death.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h6 class="text-gold">Key Exceptions (Sec 300)</h6>
+                        <ul class="small">
+                            <li>Grave & sudden provocation (Exception 1) — Nanavati case</li>
+                            <li>Exceeding right of private defence</li>
+                            <li>Public servant exceeding powers</li>
+                            <li>Sudden fight without premeditation</li>
+                            <li>Consent (for euthanasia debate)</li>
+                        </ul>
+                    </div>
+                    <div class="alert alert-dark mt-3 small">
+                        <strong>Pro Tip:</strong> Always start answer with "Whether the act amounts to murder or culpable homicide depends on the intention and knowledge of the accused as per the facts..."
+                    </div>
+                `
+            },
+            34: {
+                title: "Section 34 vs Section 149",
+                body: `
+                    <div class="mb-4">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="p-3 border border-gold rounded-3">
+                                    <strong class="text-gold">Section 34 — Common Intention</strong><br>
+                                    <small>Requires prior meeting of minds. All participants must have same intention. Act done in furtherance of common intention.</small>
+                                    <div class="mt-2 small"><strong>Key Case:</strong> Mahbub Shah</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-3 border border-gold rounded-3">
+                                    <strong class="text-gold">Section 149 — Common Object</strong><br>
+                                    <small>Membership in unlawful assembly + knowledge of common object is sufficient. No prior meeting of minds required.</small>
+                                    <div class="mt-2 small"><strong>Key Case:</strong> Shambhu Nath Singh</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <strong>Most Common Exam Trap:</strong> Students confuse the two. Remember: Sec 34 needs "common intention" + "act in furtherance". Sec 149 needs only "membership + knowledge of object".
+                    </div>
+                `
+            },
+            375: {
+                title: "Sections 375–376D: Rape & Sexual Offences",
+                body: `
+                    <div>
+                        <h6 class="text-gold">Key Amendments & Provisions</h6>
+                        <ul class="small">
+                            <li>Consent must be unequivocal, voluntary and given by a person of sound mind</li>
+                            <li>Age of consent is 18 years (strict liability)</li>
+                            <li>Aggravated forms under 376(2) — custodial rape, gang rape, repeat offender</li>
+                            <li>376A — Death penalty for rape resulting in death or persistent vegetative state</li>
+                            <li>376D — Gang rape (minimum 20 years)</li>
+                        </ul>
+                        
+                        <div class="mt-3 p-3 bg-dark bg-opacity-50 rounded">
+                            <strong>Landmark Principle:</strong><br>
+                            <small>"Consent obtained by fear of death or hurt is not valid consent" — State of Punjab v. Gurmit Singh</small>
+                        </div>
+                    </div>
+                `
+            }
+        };
+
+        function showSectionModal(section) {
+            const modal = new bootstrap.Modal(document.getElementById('sectionModal'));
+            const titleEl = document.getElementById('sectionModalTitle');
+            const bodyEl = document.getElementById('sectionModalBody');
+            
+            const data = sectionData[section];
+            if (data) {
+                titleEl.innerHTML = data.title;
+                bodyEl.innerHTML = data.body;
+            } else {
+                titleEl.innerHTML = "Section Details";
+                bodyEl.innerHTML = "<p>Detailed explanation for this section will be available in the full premium edition.</p>";
+            }
+            modal.show();
+        }
+
+        // Case Modal Data
+        const caseData = {
+            virsa: {
+                title: "Virsa Singh v. State of Punjab (1958)",
+                body: `
+                    <p><strong>Held:</strong> If the intention of the accused was to cause bodily injury which was sufficient in the ordinary course of nature to cause death, then the offence is murder under clause 3 of Section 300 IPC.</p>
+                    <p class="mb-0"><strong>Significance:</strong> This case laid down the test for determining whether a particular injury is sufficient in the ordinary course of nature to cause death. It remains the cornerstone for distinguishing murder from culpable homicide.</p>
+                `
+            },
+            nanavati: {
+                title: "K.M. Nanavati v. State of Maharashtra (1962)",
+                body: `
+                    <p><strong>Held:</strong> The provocation must be grave and sudden. The accused must have been deprived of self-control at the time of the act.</p>
+                    <p class="mb-0"><strong>Significance:</strong> Classic case on Exception 1 to Section 300. The Supreme Court laid down detailed guidelines on what constitutes "grave and sudden provocation". Still heavily tested in exams.</p>
+                `
+            },
+            mahbub: {
+                title: "Mahbub Shah v. Emperor (1945)",
+                body: `
+                    <p><strong>Held:</strong> For Section 34 to apply, there must be a prior meeting of minds and a common intention. The act must be done in furtherance of that common intention.</p>
+                    <p class="mb-0"><strong>Significance:</strong> Foundational judgment on common intention. Distinguishes it clearly from common object under Section 149.</p>
+                `
+            },
+            shambhu: {
+                title: "Shambhu Nath Singh v. State of Bihar",
+                body: `
+                    <p><strong>Held:</strong> Under Section 149, it is sufficient if the accused was a member of the unlawful assembly and knew that the offence was likely to be committed in prosecution of the common object.</p>
+                    <p class="mb-0"><strong>Significance:</strong> Clarifies that prior agreement is not necessary for Section 149. Membership + knowledge of object is enough.</p>
+                `
+            }
+        };
+
+        function showCaseModal(caseKey) {
+            const modal = new bootstrap.Modal(document.getElementById('caseModal'));
+            const titleEl = document.getElementById('caseModalTitle');
+            const bodyEl = document.getElementById('caseModalBody');
+            
+            const data = caseData[caseKey];
+            if (data) {
+                titleEl.innerHTML = data.title;
+                bodyEl.innerHTML = data.body;
+            } else {
+                titleEl.innerHTML = "Case Details";
+                bodyEl.innerHTML = "<p>Full case analysis available in the premium edition with judgment excerpts and exam-oriented notes.</p>";
+            }
+            modal.show();
+        }
+
+        function showPremiumModal() {
+            const modal = new bootstrap.Modal(document.getElementById('premiumModal'));
+            modal.show();
+        }
+
+        // === QUIZ SYSTEM ===
+        const quizQuestions = [
+            {
+                q: "Which section defines 'Murder' under IPC?",
+                options: ["Section 299", "Section 300", "Section 302", "Section 304"],
+                correct: 1,
+                explanation: "Section 300 defines Murder. Section 299 defines Culpable Homicide."
+            },
+            {
+                q: "For Section 34 to apply, which of the following is essential?",
+                options: ["Prior meeting of minds", "Common object", "Unlawful assembly", "All of the above"],
+                correct: 0,
+                explanation: "Section 34 requires a common intention formed by prior meeting of minds."
+            },
+            {
+                q: "Under Section 149, liability arises if the person:",
+                options: ["Had prior agreement with others", "Was merely present at the scene", "Was a member of unlawful assembly knowing the common object", "None of the above"],
+                correct: 2,
+                explanation: "Membership of unlawful assembly + knowledge of common object is sufficient under Sec 149."
+            },
+            {
+                q: "Which case is the leading authority on 'grave and sudden provocation'?",
+                options: ["Virsa Singh", "K.M. Nanavati", "Mahbub Shah", "Barendra Kumar Ghosh"],
+                correct: 1,
+                explanation: "K.M. Nanavati v. State of Maharashtra is the classic case on Exception 1 to Section 300."
+            },
+            {
+                q: "Minimum punishment for gang rape under Section 376D is:",
+                options: ["10 years", "14 years", "20 years", "Life imprisonment"],
+                correct: 2,
+                explanation: "Section 376D prescribes a minimum of 20 years rigorous imprisonment for gang rape."
+            }
+        ];
+        
+        let currentQuestion = 0;
+        let score = 0;
+        let selectedOption = null;
+        
+        function startQuiz() {
+            document.getElementById('quiz-start').style.display = 'none';
+            document.getElementById('quiz-questions').style.display = 'block';
+            currentQuestion = 0;
+            score = 0;
+            loadQuestion();
+        }
+        
+        function loadQuestion() {
+            const q = quizQuestions[currentQuestion];
+            document.getElementById('q-number').textContent = currentQuestion + 1;
+            document.getElementById('q-score').textContent = score;
+            document.getElementById('question-text').innerHTML = q.q;
+            
+            const container = document.getElementById('options-container');
+            container.innerHTML = '';
+            
+            q.options.forEach((option, index) => {
+                const div = document.createElement('div');
+                div.className = 'quiz-option';
+                div.innerHTML = option;
+                div.onclick = () => selectOption(div, index);
+                container.appendChild(div);
+            });
+            
+            document.getElementById('next-btn').disabled = true;
+            selectedOption = null;
+        }
+        
+        function selectOption(element, index) {
+            // Deselect all
+            document.querySelectorAll('#options-container .quiz-option').forEach(el => {
+                el.classList.remove('selected');
+            });
+            
+            element.classList.add('selected');
+            selectedOption = index;
+            document.getElementById('next-btn').disabled = false;
+        }
+        
+        function nextQuestion() {
+            const q = quizQuestions[currentQuestion];
+            const options = document.querySelectorAll('#options-container .quiz-option');
+            
+            // Show correct/incorrect
+            options.forEach((el, index) => {
+                if (index === q.correct) {
+                    el.classList.add('correct');
+                } else if (index === selectedOption) {
+                    el.classList.add('incorrect');
+                }
+                el.onclick = null; // disable further clicks
+            });
+            
+            if (selectedOption === q.correct) {
+                score++;
+            }
+            
+            document.getElementById('q-score').textContent = score;
+            document.getElementById('next-btn').textContent = currentQuestion === quizQuestions.length - 1 ? 'See Result' : 'Next Question';
+            document.getElementById('next-btn').onclick = currentQuestion === quizQuestions.length - 1 ? showResult : () => {
+                currentQuestion++;
+                document.getElementById('next-btn').textContent = 'Next Question';
+                document.getElementById('next-btn').onclick = nextQuestion;
+                loadQuestion();
+            };
+        }
+        
+        function showResult() {
+            document.getElementById('quiz-questions').style.display = 'none';
+            document.getElementById('quiz-result').style.display = 'block';
+            
+            const percent = Math.round((score / quizQuestions.length) * 100);
+            const iconContainer = document.getElementById('result-icon');
+            const title = document.getElementById('result-title');
+            const text = document.getElementById('result-text');
+            
+            if (percent >= 80) {
+                iconContainer.innerHTML = '<i class="fas fa-trophy fa-4x text-gold"></i>';
+                title.innerHTML = `Excellent! ${score}/5`;
+                text.innerHTML = `You're in the top tier. Keep revising the priority sections and you'll ace the exam.`;
+            } else if (percent >= 60) {
+                iconContainer.innerHTML = '<i class="fas fa-thumbs-up fa-4x text-success"></i>';
+                title.innerHTML = `Good Job! ${score}/5`;
+                text.innerHTML = `Solid foundation. Focus more on the distinctions between 299-300 and 34 vs 149.`;
+            } else {
+                iconContainer.innerHTML = '<i class="fas fa-book-reader fa-4x text-warning"></i>';
+                title.innerHTML = `${score}/5 — Room to Improve`;
+                text.innerHTML = `Don't worry. Revisit the priority sections and attempt this quiz again after revision.`;
+            }
+        }
+        
+        function resetQuiz() {
+            document.getElementById('quiz-result').style.display = 'none';
+            document.getElementById('quiz-start').style.display = 'block';
+            document.getElementById('quiz-questions').style.display = 'none';
+        }
+
+        // Initialize everything
+        function initializePremiumSite() {
+            // Particles
+            createPremiumParticles();
+            setInterval(() => {
+                const container = document.getElementById('particles-container');
+                if (container.children.length < 12) {
+                    const p = document.createElement('div');
+                    p.className = 'gold-particle';
+                    p.style.left = Math.random() * 100 + '%';
+                    p.style.top = Math.random() * 100 + '%';
+                    p.style.animationDelay = (Math.random() * -8) + 's';
+                    container.appendChild(p);
+                    setTimeout(() => p.remove(), 8500);
+                }
+            }, 2200);
+            
+            // Animate counters
+            setTimeout(animateCounters, 800);
+            
+            // Load study progress
+            loadProgress();
+            
+            // Keyboard support for quiz (optional)
+            document.addEventListener('keydown', function(e) {
+                if (document.getElementById('quiz-questions').style.display === 'block') {
+                    if (e.key === 'Enter' && !document.getElementById('next-btn').disabled) {
+                        document.getElementById('next-btn').click();
+                    }
+                }
+            });
+            
+            // Smooth scroll for all anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+            
+            // Easter egg: Click logo 5 times for fun message
+            let logoClicks = 0;
+            const logo = document.querySelector('.navbar-brand');
+            if (logo) {
+                logo.addEventListener('click', () => {
+                    logoClicks++;
+                    if (logoClicks === 5) {
+                        logoClicks = 0;
+                        const originalText = logo.innerHTML;
+                        logo.innerHTML = '<i class="fas fa-gavel me-2"></i>ALL THE BEST FOR YOUR EXAM!';
+                        setTimeout(() => {
+                            logo.innerHTML = originalText;
+                        }, 2200);
+                    }
+                });
+            }
+            
+            console.log('%c[Premium] LAW & ORDER Elite Judiciary Site initialized successfully.', 'color:#D4AF37');
+        }
+        
+        // Boot the site
+        window.onload = initializePremiumSite;
+    </script>
+</body>
+</html>
